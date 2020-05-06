@@ -1,0 +1,25 @@
+I"J<div class="row">
+
+    <div class="col-md-12">
+
+        <ul id="posts-list">
+            
+        </ul> 
+
+        <!-- Pagination -->
+        
+
+
+    </div>
+
+</div>
+<script>
+    $(document).ready(function(){
+
+        // Enable bootstrap tooltip
+        $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+
+    });
+</script>
+
+:ET

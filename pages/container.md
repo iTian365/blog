@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 架构相关
-titlebar: archives
-subtitle: <span class="mega-octicon octicon-calendar"></span>&nbsp;&nbsp;专题系列： &nbsp;&nbsp; <a href ="http://blog.itian365.com/archives.html"><font color="#1A0DAB">架构相关</font></a>&nbsp;&nbsp; <a href ="http://blog.itian365.com/docker.html"><font color="#1E90FF">Docker</font></a>
-menu: archives
+title: 容器相关
+titlebar: container
+subtitle: <span class="mega-octicon octicon-calendar"></span>&nbsp;&nbsp;专题系列： &nbsp;&nbsp; <a href ="http://blog.itian365.com/archives.html"><font color="#1A0DAB">架构</font></a>&nbsp;&nbsp; <a href ="http://blog.itian365.com/docker.html"><font color="#1E90FF">Docker</font></a>
+menu: container
 css: ['blog-page.css']
-permalink: /archives.html
+permalink: /container
 ---
 
 <div class="row">
@@ -14,7 +14,7 @@ permalink: /archives.html
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='concurrency' or  post.category=='design'%}
+                {% if post.category=='docker' or  post.category=='kubernetes'%}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Python 系列文章
-titlebar: python
-subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; Python 学习教程系列文章
-menu: python
+title: Kubernetes 系列
+titlebar: kubernetes
+subtitle: <span class="mega-octicon octicon-calendar"></span>&nbsp;&nbsp;专题系列： &nbsp;&nbsp; <a href ="http://blog.itian365.com/archives.html"><font color="#1A0DAB">架构</font></a>&nbsp;&nbsp; <a href ="http://blog.itian365.com/docker.html"><font color="#1E90FF">Docker</font></a>
+menu: kubernetes
 css: ['blog-page.css']
-permalink: /python
+permalink: /kubernetes
 ---
 
 <div class="row">
@@ -14,7 +14,7 @@ permalink: /python
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='python'  or post.keywords contains 'Python' %}
+                {% if post.category=='kubernetes'%}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -28,7 +28,6 @@ permalink: /python
 
         <!-- Pagination -->
         {% include pagination.html %}
-
     </div>
 
 </div>

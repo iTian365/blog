@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Java 极客技术
+title: Java相关
 titlebar: java
-subtitle: <span class="mega-octicon octicon-clippy"></span> &nbsp;&nbsp; Java 人的精神家园。>&nbsp;&nbsp;>&nbsp;&nbsp;<a href ="http://www.justdojava.com/" target="_blank" ><font color="#EB9439">点我直达</font></a>
+subtitle: <span class="mega-octicon octicon-calendar"></span>&nbsp;&nbsp;专题系列： &nbsp;&nbsp; <a href ="http://blog.itian365.com/archives.html"><font color="#1A0DAB">架构</font></a>&nbsp;&nbsp; <a href ="http://blog.itian365.com/docker.html"><font color="#1E90FF">Docker</font></a>
 menu: java
 css: ['blog-page.css']
 permalink: /java
@@ -14,7 +14,7 @@ permalink: /java
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='java' or post.category=='jvm' or post.keywords contains 'java' %}
+                {% if post.category=='jvm' or  post.category=='javase'%}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>

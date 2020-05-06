@@ -1,20 +1,10 @@
----
-layout: page
-title: 极客技术专栏
-titlebar: geektime
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp;
-menu: geektime
-css: ['blog-page.css']
-permalink: /geektime
----
-
 <div class="row">
 
     <div class="col-md-12">
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='geektime' %}
+                {% if post.category=='javase' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -24,7 +14,7 @@ permalink: /geektime
                 </li>
                 {% endif %}
             {% endfor %}
-        </ul> 
+        </ul>
 
         <!-- Pagination -->
         {% include pagination.html %}

@@ -7,11 +7,11 @@
 
 # Site settings
 title:  iTian Blog
-subtitle: 分享技术，品味人生
+subtitle: 热爱生活每一天
 name: iTian Blog
 email: jett_vip@126.com
 description: 本站是个人技术分享博客。内容涵盖生活故事、Java后端技术、Spring Boot、Spring Cloud、微服务架构、大数据演进、高可用架构、中间件使用、系统监控等相关的研究与知识分享。
-keywords: Spring,Spring Boot,Spring Cloud,MongoDB,Jvm,Docker,生活故事,架构,大数据,一线,FastDFS,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,Python,
+keywords: Spring,Spring Boot,Spring Cloud,MongoDB,JVM,Docker,生活故事,架构,大数据,一线,开发者,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,IT技术博客,Java,
 encoding: "utf-8"
 favicon: favicon.ico
 
@@ -54,11 +54,6 @@ paginate_path: 'page:num'
 menus:
 
   -
-    href: /link.html
-    label: 友链
-    target: _self
-
-  -
     href: /about.html
     label: 关于
     target: _self
@@ -75,29 +70,36 @@ navs:
     label: Java
     target: _self
     subnav:
-
       -
         subHref: /jvm.html
-        subLabel: Jvm
-
+        subLabel: JVM
       -
         subHref: /javase.html
         subLabel: Java SE
+
   -
     href: /archives.html
     label: 架构
     target: _self
+    subnav:
+      - subHref: /concurrency.html
+        subLabel: 并发编程
+      - subHref: /design.html
+        subLabel: 设计模式
 
+  - href: /container.html
+    label: 容器
+    target: _self
+    subnav:
+      - subHref: /docker.html
+        subLabel: Docker
+
+      - subHref: /kubernetes.html
+        subLabel: Kubernetes
 
 
 # labels. my blog key words
 labels:
-
-  -
-    href: /fastdfs.html
-    label: FastDFS
-    target: _blank
-
   -
     href: /docker.html
     label: Docker
@@ -108,19 +110,19 @@ labels:
 classes:
 
   -
-    href: /cartoon.html
-    name: 不会笑青年
-    describe: 内心沉稳 ，放荡不羁。
+    href: /concurrency.html
+    name: 并发编程
+    describe: 充分利用处理器，达到最高性能
 
   -
-    href: /life.html
-    name: 我的故事
-    describe: 生活就是故事，故事就是生活
+    href: /design.html
+    name: 设计模式
+    describe: 开发中问题解决方案的结晶
 
   -
-    href: /it.html
-    name: IT行业深度报道
-    describe: IT大佬，互联网知名公司的故事
+    href: /docker.html
+    name: Docker
+    describe: 开源的应用容器引擎
 
 
 

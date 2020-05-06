@@ -82,32 +82,36 @@ navs:
     target: _self
     subnav:
       -
-      - subHref: /framework.html
+        subHref: /framework.html
         subLabel: Framework
-
-      - subHref: /mvc.html
+      -
+        subHref: /mvc.html
         subLabel: MVC
-
-      - subHref: /cloud.html
-          subLabel: Cloud
+      -
+        subHref: /cloud.html
+        subLabel: Cloud
   -
     href: /archives.html
     label: 架构
     target: _self
     subnav:
-      - subHref: /concurrency.html
+      -
+        subHref: /concurrency.html
         subLabel: 并发编程
-      - subHref: /design.html
+      -
+        subHref: /design.html
         subLabel: 设计模式
 
   - href: /container.html
     label: 容器
     target: _self
     subnav:
-      - subHref: /docker.html
+      -
+        subHref: /docker.html
         subLabel: Docker
 
-      - subHref: /kubernetes.html
+      -
+        subHref: /kubernetes.html
         subLabel: Kubernetes
 
 
